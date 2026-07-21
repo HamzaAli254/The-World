@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*body*/
+body{
+    background-color: #2e8b56fe;
+}
+/*header*/
+header{
+    border: 3px solid gold;
+    border-radius: 15px;
+    background-color: #153f27;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0px;
+    z-index: 174;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+/*title*/
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+/*nav bar*/
+nav{
+    display: flex;
+    gap: 30px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+nav a:hover{
+    color: gold;
+}
+/*yhe content*/
+main{
+    width: 100%;
+    margin: auto;
+}
+/*land*/
+#land{
+    width: 90%;
+    margin: 40px auto;
+    background-color: #edf9f0;
+    padding: 5px;
+    border-radius: 15px;
+}
+section h2{
+    text-align: center;
+    font-size: 42px;
+    margin: 30px;
+}
+section img{
+    width: 30%;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+section p{
+    width: 95%;
+    margin: 25px auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+}
+.title{
+    text-align: center;
+    font-size: 42px;
+    margin: 30px;
+    background-color: #edf9f0;
+    border: 5px solid #153f27;
+    border-radius: 20px;
+    padding: 15px;
+    margin: auto;
+    width: fit-content;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+/*prev btn*/
+.prev{
+    position: fixed;
+    background-color: #153f27;
+    color: white;
+    border: 2px solid gold;
+    border-radius: 30px;
+    bottom: 20px;
+    left: 20px;
+    width: fit-content;
+    text-decoration: none;
+    transition: 0.3s;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+.prev:hover{
+    color: black;
+    background-color: gold;
+    transform: translateY(-5px);
+}
+/*Continents*/
+#continents{
+    width: 90%;
+    margin: 80px auto;
+}
+#continents h2{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 40px;
+}
+/*the information*/
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+/*cards*/
+.card{
+    width: 300px;
+    background-color: #edf9f0;
+    text-decoration: none;
+    color: black;
+    border: 5px solid #153f27;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card h3{
+    text-align: center;
+    margin: 15px 0px;
+}
+.card p{
+    margin: 10px 20px;
+}
+/* Search * Sort * Filter */
+.tools{
+    width: fit-content;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.tools input,
+.tools select{
+    width: 230px;
+    padding: 10px 15px;
+    background-color: #edf9f0;
+    border: 2px solid #153f27;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.tools input:hover,
+.tools select:hover{
+    transform: translateY(-3px);
+}
+.tools input:focus,
+.tools select:focus{
+    border: 2px solid gold;
+}

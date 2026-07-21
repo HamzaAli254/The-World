@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land</title>
+    <link rel="stylesheet" href="land.css">
+</head>
+<body>
+    <header>
+        <h1>Land Explorer</h1>
+        <nav>
+            <a href="#continents">Continents</a>
+            <a href="#countries">Countries</a>
+        </nav>
+    </header>
+    <main>
+        <section id="land">
+            <h2>Land</h2>
+            <img src="land.jpg" alt="Land">
+            <p>Earth's land covers about 29% of the planet's surface, stretching across seven continents: Asia, Africa, North America, South America, Antarctica, Europe, and Australia. These land areas contain a wide variety of landscapes, including towering mountain ranges, vast plains, rolling hills, deserts, forests, grasslands, and frozen regions. Earth's land is rich in natural resources such as minerals, fertile soil, forests, and freshwater lakes, which support agriculture, industry, and human life. It is also home to millions of plant and animal species living in diverse ecosystems, from tropical rainforests and temperate woodlands to dry deserts and icy tundras. Human civilizations have developed on Earth's land for thousands of years, building cities, farms, roads, and cultures across the continents. The diversity of Earth's landscapes and environments makes its land one of the most important features of the planet, supporting biodiversity, shaping climates, and providing the resources needed for life to thrive.</p>
+        </section>
+        <!--continenets-->
+        <section id="continents">
+            <h2 class="title">Continents</h2>
+            <!--Search & Sort-->
+            <div class="tools">
+                <!--search-->
+                <input type="text" id="search" placeholder="Search continent..">
+                <!--sort-->
+                <select id="sort">
+                    <option value="name">A-Z</option>
+                    <option value="population">Population</option>
+                    <option value="area">Area</option>
+                    <option value="countries">Countries No.</option>
+                </select>
+            </div>
+            <!--datas-->
+            <div class="data">
+                <!--africa-->
+                <a href="continents/africa.html"
+                class="card"
+                data-name="Africa"
+                data-area="30370000"
+                data-population="1500000000"
+                data-countries="54">
+                    <img src="continents/africa.jpg" alt="Africa">
+                    <h3>Africa</h3>
+                    <p><b>Area:</b> 30.37 million km<sup>2</sup></p>
+                    <p><b>Population:</b> 1.5 Billion</p>
+                </a>
+                <!--europe-->
+                <a href="continents/europe.html"
+                class="card"
+                data-name="Europe"
+                data-area="10180000"
+                data-population="745000000"
+                data-countries="44">
+                    <img src="continents/europe.jpg" alt="Europe">
+                    <h3>Europe</h3>
+                    <p><b>Area:</b> 10.18 million km<sup>2</sup></p>
+                    <p><b>Population:</b> 745 Million</p>
+                </a>
+                <!--Asia-->
+                <a href="continents/asia.html"
+                class="card"
+                data-name="Asia"
+                data-area="44580000"
+                data-population="4830000000"
+                data-countries="49">
+                    <img src="continents/asia.jpg" alt="Asia">
+                    <h3>Asia</h3>
+                    <p><b>Area:</b> 44.58 miliion km<sup>2</sup></p>
+                    <p><b>Population:</b> 4.83 Billion</p>
+                </a>
+                <!--north america-->
+                <a href="continents/north-america.html"
+                class="card"
+                data-name="North America"
+                data-area="24710000"
+                data-population="610000000"
+                data-countries="23">
+                    <img src="continents/north-america.jpg" alt="North-America">
+                    <h3>North America</h3>
+                    <p><b>Area:</b> 24.71 million km<sup>2</sup></p>
+                    <p><b>Population:</b> 610 Million</p>
+                </a>
+                <!--south america-->
+                <a href="continents/south-america.html"
+                class="card"
+                data-name="South America"
+                data-area="17840000"
+                data-population="439000000"
+                data-countries="12">
+                    <img src="continents/south-america.jpg" alt="South-america">
+                    <h3>South America</h3>
+                    <p><b>Area:</b> 17.84 million km<sup>2</sup></p>
+                    <p><b>Population:</b> 439 Million</p>
+                </a>
+                <!--Oceania-->
+                <a href="continents/australia.html"
+                class="card"
+                data-name="Oceania"
+                data-area="8530000"
+                data-population="46000000"
+                data-countries="14">
+                    <img src="continents/australia.jpg" alt="Oceania">
+                    <h3>Oceania</h3>
+                    <p><b>Area:</b> 8.53 million km<sup>2</sup></p>
+                    <p><b>Population:</b> 46 Million</p>
+                </a>
+                <!--antarctica-->
+                <a href="continents/anterctica.html"
+                class="card"
+                data-name="Anterctica"
+                data-area="14200000"
+                data-population="0"
+                data-countries="0">
+                    <img src="continents/anterctica.jpg" alt="Antarctica">
+                    <h3>Anterctica</h3>
+                    <p><b>Area:</b> 14.2 million km<sup>2</sup></p>
+                    <p><b>Population:</b> 0</p>
+                </a>
+            </div>
+        </section>
+        <!--countries-->
+        <section id="countries">
+            <h2 class="title">Countries</h2>
+            <!--Sort search filter-->
+            <div class="tools">
+                <!--search-->
+                <input type="text" id="search-country" placeholder="Search country..">
+                <!--sort-->
+                <select id="sort-country">
+                    <option value="name">A-Z</option>
+                    <option value="population">Population</option>
+                    <option value="area">Area</option>
+                </select>
+                <!--filter-->
+                <!--region-->
+                <select id="filter-continent">
+                    <option value="all">All Continents</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="North America">Nort America</option>
+                    <option value="South America">South America</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+                <!--government type-->
+                <select id="filter-government">
+                    <option value="all">All Governments</option>
+                    <option value="Republic">Republic</option>
+                    <option value="Constitutional Monarchy">Constitutional Monarchy</option>
+                    <option value="Absolute Monarchy">Absolute Monarchy</option>
+                    <option value="Federal Republic">Federal Republic</option>
+                    <option value="Communist State">Communist State</option>
+                    <option value="One-Party State">One-Party State</option>
+                </select>
+            </div>
+            <div class="data"></div>
+        </section>
+    </main>
+    <a href="index.html" class="prev">← Previous</a>
+    <script src="script.js"></script>
+</body>
+</html>
