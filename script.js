@@ -1,9 +1,9 @@
 // Search
-let search = document.getElementById("search");
-let cards = document.querySelectorAll(".card");
-search.onkeyup = function () {
-    let text = search.value.toLowerCase();
-    for (let card of cards) {
+let continentsearch = document.getElementById("search");
+let continentcards = document.querySelectorAll("#continents .card");
+continentsearch .onkeyup = function () {
+    let text = continentsearch.value.toLowerCase();
+    for (let card of continentcards) {
         let name = card.dataset.name.toLowerCase();
         if (name.includes(text)) {
             card.style.display = "block";
@@ -14,38 +14,38 @@ search.onkeyup = function () {
     }
 };
 //sort
-let sort = document.getElementById("sort");
-let container = document.querySelector(".data");
-sort.onchange = function () {
-    let cards = Array.from(container.children);
+let continentsort = document.getElementById("sort");
+let continentcontainer = document.querySelector("#continents .data");
+continentsort.onchange = function () {
+    let cards = Array.from(continentcontainer.children);
     cards.sort(function (a, b) {
-        if (sort.value == "name") {
+        if (continentsort.value == "name") {
             return a.dataset.name.localeCompare(b.dataset.name);
         }
-        if (sort.value == "population") {
+        if (continentsort.value == "population") {
             return b.dataset.population - a.dataset.population;
         }
-        if (sort.value == "area") {
+        if (continentsort.value == "area") {
             return b.dataset.area - a.dataset.area;
         }
-        if (sort.value == "countries") {
+        if (continentsort.value == "countries") {
             return b.dataset.countries - a.dataset.countries;
         }
     });
-    container.innerHTML = "";
+    continentcontainer.innerHTML = "";
     for (let card of cards) {
-        container.appendChild(card);
+        continentcontainer.appendChild(card);
     }
 };
 
 
 /////                 Country                     /////
 // Search country
-let search = document.getElementById("search-country");
-let cards = document.querySelectorAll(".card");
-search.onkeyup = function () {
-    let text = search.value.toLowerCase();
-    for (let card of cards) {
+let countrysearch = document.getElementById("search-country");
+let countrycards = document.querySelectorAll("#countries .card");
+countrysearch.onkeyup = function () {
+    let text = countrysearch.value.toLowerCase();
+    for (let card of countrycards) {
         let name = card.dataset.name.toLowerCase();
         if (name.includes(text)) {
             card.style.display = "block";
@@ -56,30 +56,30 @@ search.onkeyup = function () {
     }
 };
 //sort country
-let sort = document.getElementById("sort-country");
-let container = document.querySelector(".data");
-sort.onchange = function () {
-    let cards = Array.from(container.children);
+let countrysort = document.getElementById("sort-country");
+let countrycontainer = document.querySelector("#countries .data");
+countrysort.onchange = function () {
+    let cards = Array.from(countrycontainer.children);
     cards.sort(function (a, b) {
-        if (sort.value == "name") {
+        if (countrysort.value == "name") {
             return a.dataset.name.localeCompare(b.dataset.name);
         }
-        if (sort.value == "population") {
+        if (countrysort.value == "population") {
             return b.dataset.population - a.dataset.population;
         }
-        if (sort.value == "area") {
+        if (countrysort.value == "area") {
             return b.dataset.area - a.dataset.area;
         }
     });
-    container.innerHTML = "";
+    countrycontainer.innerHTML = "";
     for (let card of cards) {
-        container.appendChild(card);
+        countrycontainer.appendChild(card);
     }
 };
 // Filter
 let continentFilter = document.getElementById("filter-continent");
 let governmentFilter = document.getElementById("filter-government");
-let cards = document.querySelectorAll(".card");
+let cards = document.querySelectorAll("#countries .card");
 function filterCards() {
     for (let card of cards) {
         let continent = card.dataset.continent;
