@@ -76,3 +76,23 @@ sort.onchange = function () {
         container.appendChild(card);
     }
 };
+// Filter
+let continentFilter = document.getElementById("filter-continent");
+let governmentFilter = document.getElementById("filter-government");
+let cards = document.querySelectorAll(".card");
+function filterCards() {
+    for (let card of cards) {
+        let continent = card.dataset.continent;
+        let government = card.dataset.government;
+        let continentMatch = continentFilter.value == "all" || continent == continentFilter.value;
+        let governmentMatch = governmentFilter.value == "all" || government == governmentFilter.value;
+        if (continentMatch && governmentMatch) {
+            card.style.display = "block";
+        }
+        else {
+            card.style.display = "none";
+        }
+    }
+}
+continentFilter.onchange = filterCards;
+governmentFilter.onchange = filterCards;
