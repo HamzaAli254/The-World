@@ -1,3 +1,5 @@
+// Land //
+//            Continent        //
 // Search
 let continentsearch = document.getElementById("search");
 let continentcards = document.querySelectorAll("#continents .card");
