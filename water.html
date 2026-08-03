@@ -25,46 +25,876 @@
         <!--oceans-->
         <section id="oceans">
             <h2 class="title2">Oceans</h2>
-            <div class="data2">
-                <!--pacific-->
-                <a href="ocean.html" class="card2">
-                    <img src="oceans/pacific.jpg" alt="Pacific Ocean">
-                    <h3>Pacific</h3>
-                    <p><b>Area:</b>165.25 million km<sup>2</sup></p>
-                    <p><b>Average Depth:</b>4,280 m</p>
+            <!-- toooooools -->
+             <div class="tools">
+                <!-- search -->
+                <input type="text" id="search-ocean" placeholder="Search Ocean...">
+                <!-- sort -->
+                <select id="sort-ocean">
+                    <option value="name">A-Z</option>
+                    <option value="area">Area</option>
+                    <option value="depth">Depth</option>
+                </select>
+            </div>
+            <div class="data">
+                <!--arctic-->
+                <a href="oceans/arctic.html"
+                class="card"
+                data-name="arctic"
+                data-area="14060000"
+                data-depth="1205">
+                    <img src="oceans/arctic.jpg" alt="Arctict Ocean">
+                    <h3>Arctict</h3>
+                    <p><b>Area:</b>14.06 million km<sup>2</sup></p>
+                    <p><b>Average Depth:</b>1,205 m</p>
                 </a>
                 <!--atlantic-->
-                <a href="ocean.html" class="card2">
+                <a href="oceans/atlantic.html"
+                class="card"
+                data-name="atlantic"
+                data-area="106460000"
+                data-depth="3646">
                     <img src="oceans/atlantic.jpg" alt="Atlantic Ocean">
                     <h3>Atlantic</h3>
                     <p><b>Area:</b>106.46 million km<sup>2</sup></p>
                     <p><b>Average Depth:</b>3,646 m</p>
                 </a>
                 <!--indian-->
-                <a href="ocean.html" class="card2">
+                <a href="oceans/indian.html"
+                class="card"
+                data-name="indian"
+                data-area="70560000"
+                data-depth="3741">
                     <img src="oceans/indian.png" alt="Indian Ocean">
                     <h3>Indian</h3>
                     <p><b>Area:</b>70.56 million km<sup>2</sup></p>
                     <p><b>Average Depth:</b>3,741 m</p>
                 </a>
+                <!--pacific-->
+                <a href="oceans/pacific.html"
+                class="card"
+                data-name="pacific"
+                data-area="165250000"
+                data-depth="4280">
+                    <img src="oceans/pacific.jpg" alt="Pacific Ocean">
+                    <h3>Pacific</h3>
+                    <p><b>Area:</b>165.25 million km<sup>2</sup></p>
+                    <p><b>Average Depth:</b>4,280 m</p>
+                </a>
                 <!--southern-->
-                <a href="ocean.html" class="card2">
+                <a href="oceans/southern.html"
+                class="card"
+                data-name="southern"
+                data-area="20330000"
+                data-depth="3270">
                     <img src="oceans/southern.jpg" alt="Southern Ocean">
                     <h3>Southern</h3>
                     <p><b>Area:</b>20.33 million km<sup>2</sup></p>
                     <p><b>Average Depth:</b>3,270 m</p>
                 </a>
-                <!--arctic-->
-                <a href="ocean.html" class="card2">
-                    <img src="oceans/arctic.jpg" alt="Arctict Ocean">
-                    <h3>Arctict</h3>
-                    <p><b>Area:</b>14.06 million km<sup>2</sup></p>
-                    <p><b>Average Depth:</b>1,205 m</p>
+            </div>
+        </section>
+        <!-- Seassssssssss -->
+        <section id="seas">
+            <h2 class="title2">Seas</h2>
+            <!-- toools -->
+            <div class="tools">
+                <!-- search -->
+                <input type="text" id="search-sea" placeholder="Search Sea...">
+                <!-- Sort -->
+                <select id="sort-sea">
+                    <option value="name">A-Z</option>
+                    <option value="area">Area</option>
+                    <option value="depth">Depth</option>
+                </select>
+                <!-- filterrr -->
+                <select id="filter-ocean">
+                    <option value="all">All</option>
+                    <option value="Arctic">Arctic</option>
+                    <option value="Atlantic">Atlantic</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Pacific">Pacific</option>
+                    <option value="Southern">Southern</option>
+                </select>
+                <!-- info -->
+                <div class="data">
+                    <a href="seas/Adriatic Sea.html"
+                    class="card"
+                    data-name="Adriatic Sea"
+                    data-ocean="Atlantic"
+                    data-area="138600"
+                    data-depth="252">
+                        <img src="seas/Adriatic Sea.png" alt="Adriatic Sea">
+                        <h3>Adriatic Sea</h3>
+                        <p><b>Area:</b> 138,600 km<sup>2</sup></p>
+                        <p><b>Depth:</b> 252 m</p>
+                    </a>
+                </div>
+                <!--Aegean Sea-->
+                <a href="seas/Aegean Sea.html"
+                class="card"
+                data-name="Aegean Sea"
+                data-ocean="Atlantic"
+                data-area="214000"
+                data-depth="350">
+                    <img src="seas/Aegean Sea.jpg" alt="Aegean Sea">
+                    <h3>Aegean Sea</h3>
+                    <p><b>Area:</b> 214,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 350 m</p>
                 </a>
+                <!-- Alboran Sea -->
+                <a href="seas/Alboran Sea.html"
+                class="card"
+                data-area="53000"
+                data-depth="445"
+                data-ocean="Atlantic"
+                data-name="Alboran Sea">
+                    <img src="seas/Alboran Sea.jpg" alt="Alboran Sea">
+                    <h3>Alboran Sea</h3>
+                    <p><b>Area:</b> 53,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 445 m</p>
+                </a>
+                <!-- Andaman Sea -->
+                <a href="seas/Andaman Sea.html"
+                class="card"
+                data-name="Andaman Sea"
+                data-ocean="Indian"
+                data-area="797700"
+                data-depth="870">
+                    <img src="seas/Andaman Sea.jpg" alt="Andaman">
+                    <h3>Andaman Sea</h3>
+                    <p><b>Area:</b> 797,700 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 870 m</p>
+                </a>
+                <!-- Arabian Sea -->
+                <a href="seas/Arabian Sea.html"
+                class="card"
+                data-name="Arabian Sea"
+                data-ocean="Indian"
+                data-area="3826000"
+                data-depth="2734">
+                    <img src="seas/Arabian Sea.jpg" alt="Arabian Sea">
+                    <h3>Arabian Sea</h3>
+                    <p><b>Area:</b> 3,826,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 2,734 m</p>
+                </a>
+                <!-- Arafura Sea -->
+                <a href="seas/Arafura Sea.html"
+                class="card"
+                data-name="Arafura Sea"
+                data-ocean="Pacific"
+                data-area="650000"
+                data-depth="186">
+                    <img src="seas/Arafura Sea.png" alt="Arafura Sea">
+                    <h3>Arafura Sea</h3>
+                    <p><b>Area:</b> 650,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 186 m</p>
+                </a>
+                <!-- B -->
+                <!-- Balearic Sea -->
+                <a href="seas/Balearic Sea.html"
+                class="card"
+                data-name="Balearic Sea"
+                data-ocean="Atlantic"
+                data-area="86000"
+                data-depth="767">
+                    <img src="seas/Balearic Sea.jpg" alt="Balearic Sea">
+                    <h3>Balearic Sea</h3>
+                    <p><b>Area:</b> 86,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 767 m</p>
+                </a>
+                <!-- Bali Sea -->
+                <a href="seas/Bali Sea.html"
+                class="card"
+                data-name="Bali Sea"
+                data-ocean="Pacific"
+                data-area="45000"
+                data-depth="1590">
+                    <img src="seas/Bali Sea.jpg" alt="Bali Sea">
+                    <h3>Bali Sea</h3>
+                    <p><b>Area:</b> 45,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,590 m</p>
+                </a>
+                <!-- Baltic Sea -->
+                <a href="seas/Baltic Sea.html"
+                class="card"
+                data-area="377000"
+                data-depth="55"
+                data-name="Baltic Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Baltic Sea.jpg" alt="Baltic Sea">
+                    <h3>Baltic Sea</h3>
+                    <p><b>Area:</b> 377,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,590 m</p>
+                </a>
+                <!-- Banda Sea-->
+                <a href="seas/Banda Sea.html"
+                class="card"
+                data-name="Banda Sea"
+                data-ocean="Pacific"
+                data-area="695000"
+                data-depth="2737">
+                    <img src="seas/Banda Sea.png" alt="Banda Sea">
+                    <h3>Banda Sea</h3>
+                    <p><b>Area:</b> 695,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 2,737 m</p>
+                </a>
+                <!-- Barents Sea -->
+                <a href="seas/Barents Sea.html"
+                class="card"
+                data-name="Barents Sea"
+                data-ocean="Arctic"
+                data-area="1424000"
+                data-depth="230">
+                    <img src="seas/Barents Sea.jpg" alt="Barents Sea">
+                    <h3>Barents Sea</h3>
+                    <p><b>Area:</b> 1,424,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 230 m</p>
+                </a>
+                <!-- Baltic Sea -->
+                <a href="seas/Baltic Sea.html"
+                class="card"
+                data-area="377000"
+                data-depth="55"
+                data-name="Baltic Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Baltic Sea.jpg" alt="Baltic Sea">
+                    <h3>Baltic Sea</h3>
+                    <p><b>Area:</b> 377,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 55 m</p>
+                </a>
+                <!-- Beaufort Sea -->
+                <a href="seas/Beaufort Sea.html"
+                class="card"
+                data-area="476000"
+                data-depth="1004"
+                data-name="Beaufort Sea"
+                data-ocean="Arctic">
+                    <img src="seas/Beaufort Sea.jpg" alt="Beaufort Sea">
+                    <h3>Beaufort Sea</h3>
+                    <p><b>Area:</b> 476,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,004 m</p>
+                </a>
+                <!-- Bellingshausen Sea -->
+                <a href="seas/Bellingshausen Sea.html"
+                class="card"
+                data-area="487000"
+                data-depth="1407"
+                data-name="Bellingshausen Sea"
+                data-ocean="Southern">
+                    <img src="seas/Bellingshausen Sea.jpg" alt="Bellingshausen Sea">
+                    <h3>Bellingshausen Sea</h3>
+                    <p><b>Area:</b> 487,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,407 m</p>
+                </a>
+                <!-- Bering Sea -->
+                <a href="seas/Bering Sea.html"
+                class="card"
+                data-area="2291900"
+                data-depth="1640"
+                data-ocean="Pacific"
+                data-name="Bering Sea">
+                    <img src="seas/Bering Sea.jpg" alt="Bering Sea">
+                    <h3>Bering Sea</h3>
+                    <p><b>Area:</b> 2,291,900 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,640 m</p>
+                </a>
+                <!-- Bismarck Sea -->
+                <a href="seas/Bismarck Sea.html"
+                class="card"
+                data-area="303000"
+                data-depth="1700"
+                data-name="Bismarck Sea"
+                data-ocean="Pacific">
+                    <img src="seas/Bismarck Sea.jpg" alt="Bismarck Sea">
+                    <h3>Bismarck Sea</h3>
+                    <p><b>Area:</b> 303,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,700 m</p>
+                </a>
+                <!--Black Sea-->
+                <a href="seas/Black Sea.html"
+                class="card"
+                data-area="436400"
+                data-depth="1253"
+                data-name="Black Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Black Sea.jpg" alt="Black Sea">
+                    <h3>Black Sea</h3>
+                    <p><b>Area:</b> 436,400 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,253 m</p>
+                </a>
+                <!-- CCCCCCCCCCC -->
+                <!-- Caribbean Sea -->
+                <a href="seas/Caribbean Sea.html"
+                class="card"
+                data-area="2754000"
+                data-depth="2200"
+                data-name="Caribbean Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Caribbean Sea.jpg" alt="Caribbean Sea">
+                    <h3>Caribbean Sea</h3>
+                    <p><b>Area:</b> 2,754,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 2,200 m</p>
+                </a>
+                <!-- Celebes Sea -->
+                <a href="seas/Celebes Sea.html"
+                class="card"
+                data-name="Celebes Sea"
+                data-area="280000"
+                data-depth="1500"
+                data-ocean="Pacific">
+                    <img src="seas/Celebes Sea.jpg" alt="Celebes Sea">
+                    <h3>Celebes Sea</h3>
+                    <p><b>Area:</b> 280,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,500 m</p>
+                </a>
+                <!-- Celtic Sea -->
+                <a href="seas/Celtic Sea.html"
+                class="card"
+                data-area="300000"
+                data-depth="150"
+                data-name="Celtic Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Celtic Sea.jpg" alt="Celtic Sea">
+                    <h3>Celtic Sea</h3>
+                    <p><b>Area:</b> 300,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 150 m</p>
+                </a>
+                <!-- Chukchi Sea -->
+                <a href="seas/Chukchi Sea.html"
+                class="card"
+                data-name="Chukchi Sea"
+                data-ocean="Arctic"
+                data-area="595000"
+                data-depth="77">
+                    <img src="seas/Chukchi Sea.jpg" alt="Chukchi Sea">
+                    <h3>Chukchi Sea</h3>
+                    <p><b>Area:</b> 595,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 77 m</p>
+                </a>
+                <!--Cooperation Sea-->
+                <a href="seas/Cooperation Sea.html"
+                class="card"
+                data-name="Cooperation Sea"
+                data-area="305000"
+                data-depth="3000"
+                data-ocean="Southern">
+                    <img src="seas/Cooperation Sea.jpg" alt="Cooperation Sea">
+                    <h3>Cooperation Sea</h3>
+                    <p><b>Area:</b> 305,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 3,000 m</p>
+                </a>
+                <!--Coral Sea-->
+                <a href="seas/Coral Sea.html"
+                class="card"
+                data-area="4791000"
+                data-depth="2394"
+                data-name="Coral Sea"
+                data-ocean="Pacific">
+                    <img src="seas/Coral Sea.png" alt="Coral Sea">
+                    <h3>Coral Sea</h3>
+                    <p><b>Area:</b> 4,791,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 2,394 m</p>
+                </a>
+                <!-- Cosmonauts Sea -->
+                <a href="seas/Cosmonauts Sea.html"
+                class="card"
+                data-area="699000"
+                data-depth="3000"
+                data-name="Cosmonauts Sea"
+                data-ocean="Southern">
+                    <img src="seas/Cosmonauts Sea.jpg" alt="Cosmonauts Sea">
+                    <h3>Cosmonauts Sea</h3>
+                    <p><b>Area:</b> 699,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 3,000 m</p>
+                </a>
+                <!-- D1 -->
+                <!-- Davis Sea -->
+                <a href="seas/Davis Sea.html"
+                class="card"
+                data-area="21000"
+                data-depth="571"
+                data-name="Davis Sea"
+                data-ocean="Southern">
+                    <img src="seas/Davis Sea.jpg" alt="Davis Sea">
+                    <h3>Davis Sea</h3>
+                    <p><b>Area:</b> 21,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 571 m</p>
+                </a>
+                <!-- E2 -->
+                <!-- East China Sea -->
+                <a href="seas/East China Sea.html"
+                class="card"
+                data-name="East China Sea"
+                data-ocean="Pacific"
+                data-area="1249000"
+                data-depth="349">
+                    <img src="seas/East China Sea.png" alt="East China Sea">
+                    <h3>East China Sea</h3>
+                    <p><b>Area:</b> 1,249,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 349 m</p>
+                </a>
+                <!-- East Siberian Sea -->
+                <a href="seas/East Siberian Sea.html"
+                class="card"
+                data-name="East Siberian Sea"
+                data-ocean="Arctic"
+                data-area="987000"
+                data-depth="58">
+                    <img src="seas/East Siberian Sea.jpg" alt="East Siberian Sea">
+                    <h3>East Siberian Sea</h3>
+                    <p><b>Area:</b> 987,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 58 m</p>
+                </a>
+                <!-- the only F -->
+                <!-- Flores Sea -->
+                <a href="seas/Flores Sea.html"
+                class="card"
+                data-area="240000"
+                data-depth="1520"
+                data-name="Flores Sea"
+                data-ocean="Pacific">
+                    <img src="seas/Flores Sea.png" alt="Flores Sea">
+                    <h3>Flores Sea</h3>
+                    <p><b>Area:</b> 240,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,520 m</p>
+                </a>
+                <!-- G -->
+                <!-- Greenland Sea -->
+                <a href="seas/Greenland Sea.html"
+                class="card"
+                data-area="1205000"
+                data-depth="1444"
+                data-name="Greenland Sea"
+                data-ocean="Arctic">
+                    <img src="seas/Greenland Sea.jpg" alt="Greenland Sea">
+                    <h3>Greenland Sea</h3>
+                    <p><b>Area:</b> 1,205,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,444 m</p>
+                </a>
+                <!-- I2I -->
+                <!-- Ionian Sea -->
+                <a href="seas/Ionian Sea.html"
+                class="card"
+                data-area="169000"
+                data-depth="2000"
+                data-name="Ionian Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Ionian Sea.jpg" alt="Ionian Sea">
+                    <h3>Ionian Sea</h3>
+                    <p><b>Area:</b> 169,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 2,000 m</p>
+                </a>
+                <!-- Irish Sea -->
+                <a href="seas/Irish Sea.html"
+                class="card"
+                data-name="Irish Sea"
+                data-ocean="Atlantic"
+                data-area="104000"
+                data-depth="43">
+                    <img src="seas/Irish Sea.jpg" alt="Irish Sea">
+                    <h3>Irish Sea</h3>
+                    <p><b>Area:</b> 104,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 43 m</p>
+                </a>
+                <!-- J1 -->
+                <!-- Java Sea -->
+                <a href="seas/Java Sea.html"
+                class="card"
+                data-name="Java Sea"
+                data-ocean="Pacific"
+                data-area="320000"
+                data-depth="46">
+                    <img src="seas/Java Sea.jpg" alt="Java Sea">
+                    <h3>Java Sea</h3>
+                    <p><b>Area:</b> 320,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 46 m</p>
+                </a>
+                <!-- K2K -->
+                <!-- Kara Sea -->
+                <a href="seas/Kara Sea.html"
+                class="card"
+                data-name="Kara Sea"
+                data-area="880000"
+                data-depth="131"
+                data-ocean="Arctic">
+                    <img src="seas/Kara Sea.png" alt="Kara Sea">
+                    <h3>Kara Sea</h3>
+                    <p><b>Area:</b> 880,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 131 m</p>
+                </a>
+                <!--King Haakon VII Sea-->
+                <a href="seas/King Haakon VII Sea.html"
+                class="card"
+                data-area="1090000"
+                data-depth="3000"
+                data-name="King Haakon VII Sea"
+                data-ocean="Southern">
+                    <img src="seas/King Haakon VII Sea.jpg" alt="King Haakon VII Sea">
+                    <h3>King Haakon VII Sea</h3>
+                    <p><b>Area:</b> 1,090,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 3,000 m</p>
+                </a>
+                <!-- L -->
+                <!-- Labrador Sea -->
+                <a href="seas/Labrador Sea.html"
+                class="card"
+                data-area="841000"
+                data-depth="1898"
+                data-name="Labrador Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Labrador Sea.jpg" alt="Labrador Sea">
+                    <h3>Labrador Sea</h3>
+                    <p><b>Area:</b> 841,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,898 m</p>
+                </a>
+                <!-- Laptev Sea -->
+                <a href="seas/Laptev Sea.html"
+                class="card"
+                data-area="672000"
+                data-depth="578"
+                data-name="Laptev Sea"
+                data-ocean="Arctic">
+                    <img src="seas/Laptev Sea.jpg" alt="Laptev Sea">
+                    <h3>Laptev Sea</h3>
+                    <p><b>Area:</b> 672,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 578 m</p>
+                </a>
+                <!-- Lazarev Sea -->
+                <a href="seas/Lazarev Sea.html"
+                class="card"
+                data-area="929000"
+                data-depth="3000"
+                data-name="Lazarev Sea"
+                data-ocean="Southern">
+                    <img src="seas/Lazarev Sea.jpg" alt="Lazarev Sea">
+                    <h3>Lazarev Sea</h3>
+                    <p><b>Area:</b> 929,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 3,000 m</p>
+                </a>
+                <!-- Ligurian Sea -->
+                <a href="seas/Ligurian Sea.html"
+                class="card"
+                data-area="15000"
+                data-name="Ligurian Sea"
+                data-depth="1200"
+                data-ocean="Atlantic">
+                    <img src="seas/Ligurian Sea.jpg" alt="Ligurian Sea">
+                    <h3>Ligurian Sea</h3>
+                    <p><b>Area:</b> 15,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,200 m</p>
+                </a>
+                <!-- Lincoln Sea -->
+                <a href="seas/Lincoln Sea.html"
+                class="card"
+                data-name="Lincoln Sea"
+                data-area="38000"
+                data-ocean="Arctic"
+                data-depth="257">
+                    <img src="seas/Lincoln Sea.jpg" alt="Lincoln Sea">
+                    <h3>Lincoln Sea</h3>
+                    <p><b>Area:</b>38,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 257 m</p>
+                </a>
+                <!-- Laccadive Sea -->
+                <a href="seas/Laccadive Sea.html"
+                class="card"
+                data-area="786000"
+                data-depth="1929"
+                data-name="Laccadive Sea"
+                data-ocean="Indian">
+                    <img src="seas/Laccadive Sea.png" alt="Laccadive Sea">
+                    <h3>Laccadive Sea</h3>
+                    <p><b>Area:</b> 786,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,929 m</p>
+                </a>
+                <!-- MMM -->
+                <!--Marmara Sea-->
+                <a href="seas/Marmara Sea.html"
+                class="card"
+                data-area="11350"
+                data-depth="494"
+                data-name="Marmara Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Marmara Sea.jpg" alt="Marmara Sea">
+                    <h3>Marmara Sea</h3>
+                    <p><b>Area:</b> 11,350 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 494 m</p>
+                </a>
+                <!-- Mawson Sea -->
+                <a href="seas/Mawson Sea.html"
+                class="card"
+                data-ocean="Southern"
+                data-name="Mawson Sea"
+                data-area="333000"
+                data-depth="1000">
+                    <img src="seas/Mawson Sea.jpg" alt="Mawson Sea">
+                    <h3>Mawson Sea</h3>
+                    <p><b>Area:</b> 333,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,000 m</p>
+                </a>
+                <!-- Mediterranean Sea -->
+                <a href="seas/Mediterranean Sea.html"
+                class="card"
+                data-area="2500000"
+                data-depth="1500"
+                data-name="Mediterranean Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Mediterranean Sea.jpg" alt="Mediterranean Sea">
+                    <h3>Mediterranean Sea</h3>
+                    <p><b>Area:</b> 2,500,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,500 m</p>
+                </a>
+                <!-- 1N -->
+                <!-- Norwegian Sea -->
+                <a href="seas/Norwegian Sea.html"
+                class="card"
+                data-name="Norwegian Sea"
+                data-area="1383000"
+                data-depth="1700"
+                data-ocean="Atlantic">
+                    <img src="seas/Norwegian Sea.jpg" alt="Norwegian Sea">
+                    <h3>Norwegian Sea</h3>
+                    <p><b>Area:</b> 1,383,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,700 m</p>
+                </a>
+                <!-- 1 PH -->
+                <!-- Philippine Sea -->
+                <a href="seas/Philippine Sea.html"
+                class="card"
+                data-area="5695000"
+                data-depth="4108"
+                data-name="Philippine Sea"
+                data-ocean="Pacific">
+                    <img src="seas/Philippine Sea.png" alt="Philippine Sea">
+                    <h3>Philippine Sea</h3>
+                    <p><b>Area:</b> 5,695,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 4,108 m</p>
+                </a>
+                <!-- RRRRRRRRRRR -->
+                <!-- Red Sea -->
+                <a href="seas/Red Sea.html"
+                class="card"
+                data-area="438000"
+                data-depth="490"
+                data-name="Red Sea"
+                data-ocean="Indian">
+                    <img src="seas/Red Sea.jpg" alt="Red Sea">
+                    <h3>Red Sea</h3>
+                    <p><b>Area:</b> 438,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 490 m</p>
+                </a>
+                <!-- Riiser-Larsen Sea -->
+                <a href="seas/Riiser-Larsen Sea.html"
+                class="card"
+                data-ocean="Southern"
+                data-area="1138000"
+                data-depth="3000"
+                data-name="Riiser-Larsen Sea">
+                    <img src="seas/Riiser-Larsen Sea.jpg" alt="Riiser-Larsen Sea">
+                    <h3>Riiser-Larsen Sea</h3>
+                    <p><b>Area:</b> 1,138,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 3,000 m</p>
+                </a>
+                <!-- Ross Sea -->
+                <a href="seas/Ross Sea.html"
+                class="card"
+                data-name="Ross Sea"
+                data-area="673000"
+                data-ocean="Southern"
+                data-depth="500">
+                    <img src="seas/Ross Sea.jpg" alt="Ross Sea">
+                    <h3>Ross Sea</h3>
+                    <p><b>Area:</b> 637,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 500 m</p>
+                </a>
+                <!-- Sargasso Sea -->
+                <a href="seas/Sargasso Sea.html"
+                class="card"
+                data-area="3500000"
+                data-depth="1500"
+                data-name="Sargasso Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Sargasso Sea.jpg" alt="Sargasso Sea">
+                    <h3>Sargasso Sea</h3>
+                    <p><b>Area:</b> 3,500,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,500 m</p>
+                </a>
+                <!-- Scotia Sea -->
+                <a href="seas/Scotia Sea.html"
+                class="card"
+                data-area="900000"
+                data-depth="3500"
+                data-name="Scotia Sea"
+                data-ocean="Southern">
+                    <img src="seas/Scotia Sea.jpg" alt="Scotia Sea">
+                    <h3>Scotia Sea</h3>
+                    <p><b>Area:</b> 900,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 3,500 m</p>
+                </a>
+                <!-- Sea of Azov -->
+                <a href="seas/Sea of Azov.html"
+                class="card"
+                data-name="Sea of Azov"
+                data-ocean="Atlantic"
+                data-area="39000"
+                data-depth="7">
+                    <img src="seas/Sea of Azov.jpg" alt="Sea of Azov">
+                    <h3>Sea of Azov</h3>
+                    <p><b>Area:</b> 39,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 7 m</p>
+                </a>
+                <!-- Sea of Japan -->
+                <a href="seas/Sea of Japan.html"
+                class="card"
+                data-area="978000"
+                data-depth="1752"
+                data-name="Sea of Japan"
+                data-ocean="Pacific">
+                    <img src="seas/Sea of Japan.jpg" alt="Sea of Japan">
+                    <h3>Sea of Japan</h3>
+                    <p><b>Area:</b> 978,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,752 m</p>
+                </a>
+                <!-- Sea of Okhotsk -->
+                <a href="seas/Sea of Okhotsk.html"
+                class="card"
+                data-name="Sea of Okhotsk"
+                data-area="1583000"
+                data-depth="821"
+                data-ocean="Pacific">
+                    <img src="seas/Sea of Okhotsk.png" alt="Sea of Okhotsk">
+                    <h3>Sea of Okhotsk</h3>
+                    <p><b>Area:</b> 1,583,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 821 m</p>
+                </a>
+                <!-- Somali Sea -->
+                <a href="seas/Somali Sea.html"
+                class="card"
+                data-name="Somali Sea"
+                data-ocean="Indian"
+                data-area="1500000"
+                data-depth="2800">
+                    <img src="seas/Somali Sea.png" alt="Somali Sea">
+                    <h3>Somali Sea</h3>
+                    <p><b>Area:</b> 1,500,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 2,800 m</p>
+                </a>
+                <!--Solomon Sea-->
+                <a href="seas/Solomon Sea.html"
+                class="card"
+                data-area="755000"
+                data-depth="2652"
+                data-name="Solomon Sea"
+                data-ocean="Pacific">
+                    <img src="seas/Solomon Sea.jpg" alt="Solomon Sea">
+                    <h3>Solomon Sea</h3>
+                    <p><b>Area:</b> 755,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 2,652 m</p>
+                </a>
+                <!--South China Sea-->
+                <a href="seas/South China Sea.html"
+                class="card"
+                data-name="South China Sea"
+                data-ocean="Pacific"
+                data-area="3500000"
+                data-depth="1652">
+                    <img src="seas/South China Sea.jpg" alt="South China Sea">
+                    <h3>South China Sea</h3>
+                    <p><b>Area:</b> 3,500,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 1,652 m</p>
+                </a>
+                <!--Somov Sea-->
+                <a href="seas/Somov Sea.html"
+                class="card"
+                data-area="1150000"
+                data-depth="3000"
+                data-name="Somov Sea"
+                data-ocean="Southern">
+                    <img src="seas/Somov Sea.jpg" alt="Somov Sea">
+                    <h3>Somov Sea</h3>
+                    <p><b>Area:</b> 1,150,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 3,000 m</p>
+                </a>
+                <!-- T -->
+                <!-- Tasman Sea -->
+                <a href="seas/Tasman Sea.html"
+                class="card"
+                data-area="2300000"
+                data-depth="2767"
+                data-name="Tasman Sea"
+                data-ocean="Pacific">
+                    <img src="seas/Tasman Sea.png" alt="Tasman Sea">
+                    <h3>Tasman Sea</h3>
+                    <p><b>Area:</b> 2,300,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 2,767 m</p>
+                </a>
+                <!-- Timor Sea -->
+                <a href="seas/Timor Sea.html"
+                class="card"
+                data-name="Timor Sea"
+                data-area="610000"
+                data-depth="435"
+                data-ocean="Indian">
+                    <img src="seas/Timor Sea.jpg" alt="Timor Sea">
+                    <h3>Timor Sea</h3>
+                    <p><b>Area:</b> 610,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 435 m</p>
+                </a>
+                <!-- Tyrrhenian Sea -->
+                <a href="seas/Tyrrhenian Sea.html"
+                class="card"
+                data-area="275000"
+                data-depth="2000"
+                data-name="Tyrrhenian Sea"
+                data-ocean="Atlantic">
+                    <img src="seas/Tyrrhenian Sea.jpg" alt="Tyrrhenian Sea">
+                    <h3>Tyrrhenian Sea</h3>
+                    <p><b>Area:</b> 275,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 2,000 m</p>
+                </a>
+                <!-- W -->
+                <!-- Weddell Sea -->
+                <a href="seas/Weddell Sea.html"
+                data-area="2800000"
+                data-depth="3000"
+                data-name="Weddell Sea"
+                data-ocean="Southern">
+                    <img src="seas/Weddell Sea.jpg" alt="Weddell Sea">
+                    <h3>Weddell Sea</h3>
+                    <p><b>Area:</b> 2,800,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 3,000 m</p>
+                </a>
+                <!-- White Sea -->
+                <a href="seas/White Sea.html"
+                class="card"
+                data-name="White Sea"
+                data-ocean="Arctic"
+                data-area="90000"
+                data-depth="67">
+                    <img src="seas/White Sea.jpg" alt="White Sea">
+                    <h3>White Sea</h3>
+                    <p><b>Area:</b> 90,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 67 m</p>
+                </a>
+                <!-- the only yyyyyyy -->
+                <!-- Yellow Sea -->
+                <a href="seas/Yellow Sea.html"
+                class="card"
+                data-area="380000"
+                data-ocean="Pacific"
+                data-name="Yellow Sea"
+                data-depth="44">
+                    <img src="seas/Yellow Sea.jpg" alt="Yellow Sea">
+                    <h3>Yellow Sea</h3>
+                    <p><b>Area:</b> 380,000 km<sup>2</sup></p>
+                    <p><b>Depth:</b> 44 m</p>
+                </a>
+                <!--Finalllllllyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy-->
             </div>
         </section>
     </main>
     <a href="index.html" class="prev2">← Previous</a>
-    <script src="script.js"></script>
+    <script src="water.js"></script>
 </body>
 </html>
