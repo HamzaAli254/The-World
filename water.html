@@ -12,6 +12,8 @@
         <nav>
             <a href="#oceans">Oceans</a>
             <a href="#seas">Seas</a>
+            <a href="#gulfs">Gulfs</a>
+            <a href="#bays">Bays</a>
             <a href="#straits">Straits</a>
         </nav>
     </header>
@@ -116,9 +118,10 @@
                     <option value="Pacific">Pacific</option>
                     <option value="Southern">Southern</option>
                 </select>
-                <!-- info -->
-                <div class="data">
-                    <a href="seas/Adriatic Sea.html"
+                </div>
+            <!-- info -->
+            <div class="data">
+                <a href="seas/Adriatic Sea.html"
                     class="card"
                     data-name="Adriatic Sea"
                     data-ocean="Atlantic"
@@ -128,8 +131,7 @@
                         <h3>Adriatic Sea</h3>
                         <p><b>Area:</b> 138,600 km<sup>2</sup></p>
                         <p><b>Depth:</b> 252 m</p>
-                    </a>
-                </div>
+                </a>
                 <!--Aegean Sea-->
                 <a href="seas/Aegean Sea.html"
                 class="card"
@@ -859,7 +861,8 @@
                 data-area="2800000"
                 data-depth="3000"
                 data-name="Weddell Sea"
-                data-ocean="Southern">
+                data-ocean="Southern"
+                class="card">
                     <img src="seas/Weddell Sea.jpg" alt="Weddell Sea">
                     <h3>Weddell Sea</h3>
                     <p><b>Area:</b> 2,800,000 km<sup>2</sup></p>
@@ -891,6 +894,627 @@
                     <p><b>Depth:</b> 44 m</p>
                 </a>
                 <!--Finalllllllyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy-->
+            </div>
+            <button id="show-more-sea">Show More</button>
+        </section>
+        <!-- Straits -->
+        <section id="straits">
+            <h2 class="title2">Straits</h2>
+            <div class="tools">
+                <!-- search -->
+                <input type="text" id="search-strait" placeholder="Search Strait...">
+                <!-- sort -->
+                <select id="sort-strait">
+                    <option value="name">A-Z</option>
+                    <option value="length">Length</option>
+                    <option value="width">Width</option>
+                </select>
+                <!-- filter by connects -->
+                <select id="filter-connects-strait">
+                    <option value="all">All Connections</option>
+                    <option value="ocean-ocean">Ocean↔Ocean</option>
+                    <option value="ocean-sea">Ocean↔Sea</option>
+                    <option value="ocean-gulf">Ocean↔Gulf</option>
+                    <option value="ocean-strait">Ocean↔Strait</option>
+                    <option value="sea-sea">Sea↔Sea</option>
+                    <option value="sea-gulf">Sea↔Gulf</option>
+                    <option value="sea-bay">Sea↔Bay</option>
+                    <option value="sea-strait">Sea↔Strait</option>
+                    <option value="gulf-gulf">Gulf↔Gulf</option>
+                    <option value="bay-bay">Bay↔Bay</option>
+                </select>
+            </div>
+            <!-- data -->
+            <div class="data">
+                <!-- Bab el-Mandeb -->
+                <a href="straits/Bab el-Mandeb.html"
+                class="card"
+                data-name="Bab el-Mandeb"
+                data-connects="sea-gulf"
+                data-length="32"
+                data-width="26">
+                    <img src="straits/Bab el-Mandeb.jpg" alt="Bab el-Mandeb">
+                    <h3>Bab el-Mandeb</h3>
+                    <p><b>Length:</b> 32 km</p>
+                    <p><b>Width:</b> 26 km</p>
+                </a>
+                <!-- Bass Strait -->
+                <a href="straits/Bass Strait.html"
+                class="card"
+                data-name="Bass Strait"
+                data-connects="ocean-sea"
+                data-length="500"
+                data-width="240">
+                    <img src="straits/Bass Strait.jpg" alt="Bass Strait">
+                    <h3>Bass Strait</h3>
+                    <p><b>Length:</b> 500 km</p>
+                    <p><b>Width:</b> 240 km</p>
+                </a>
+                <!-- Belle Isle Strait -->
+                <a href="straits/Belle Isle Strait.html"
+                class="card"
+                data-name="Belle Isle Strait"
+                data-connects="ocean-gulf"
+                data-length="125"
+                data-width="15">
+                    <img src="straits/Belle Isle Strait.jpg" alt="Belle Isle Strait">
+                    <h3>Belle Isle Strait</h3>
+                    <p><b>Length:</b> 125 km</p>
+                    <p><b>Width:</b> 15 km</p>
+                </a>
+                <!-- Bering Strait -->
+                <a href="straits/Bering Strait.html"
+                class="card"
+                data-name="Bering Strait"
+                data-connects="ocean-sea"
+                data-length="96"
+                data-width="82">
+                    <img src="straits/Bering Strait.jpg" alt="Bering Strait">
+                    <h3>Bering Strait</h3>
+                    <p><b>Length:</b> 96 km<sup>2</sup></p>
+                    <p><b>Width:</b> 82 km</p>
+                </a>
+                <!-- Bosporus -->
+                <a href="straits/Bosporus.html"
+                class="card"
+                data-name="Bosporus"
+                data-connects="sea-sea"
+                data-length="31"
+                data-width="1">
+                    <img src="straits/Bosporus.jpg" alt="Bosporus">
+                    <h3>Bosporus</h3>
+                    <p><b>Length:</b> 31 km</p>
+                    <p><b>Width:</b> 0.7 km</p>
+                </a>
+                <!-- c -->
+                <!-- Cabot Strait -->
+                <a href="straits/Cabot Strait.html"
+                class="card"
+                data-name="Cabot Strait"
+                data-connects="ocean-gulf"
+                data-length="110"
+                data-width="104">
+                    <img src="straits/Cabot Strait.gif" alt="Cabot Strait">
+                    <h3>Cabot Strait</h3>
+                    <p><b>Length:</b> 110 km</p>
+                    <p><b>Width:</b> 104 km</p>
+                </a>
+                <a href="straits/Cook Strait.html"
+                class="card"
+                data-name="Cook Strait"
+                data-connects="ocean-sea"
+                data-length="22"
+                data-width="22">
+                    <img src="straits/Cook Strait.jpg" alt="Cook Strait">
+                    <h3>Cook Strait</h3>
+                    <p><b>Length:</b> 22 km</p>
+                    <p><b>Width:</b> 22 km</p>
+                </a>
+                <!-- DDDDDDDDDD -->
+                <!-- Dardanelles -->
+                <a href="straits/Dardanelles.html"
+                class="card"
+                data-name="Dardanelles"
+                data-connects="sea-sea"
+                data-length="21"
+                data-width="1.2">
+                    <img src="straits/Dardanelles.jpg" alt="Dardanelles">
+                    <h3>Dardanelles</h3>
+                    <p><b>Length:</b> 61 km</p>
+                    <p><b>Width:</b> 1.2 km</p>
+                </a>
+                <!-- Davis Strait -->
+                <a href="straits/Davis Strait.html"
+                class="card"
+                data-name="Davis Strait"
+                data-connects="sea-bay"
+                data-length="650"
+                data-width="338">
+                    <img src="straits/Davis Strait.jpg" alt="Davis Strait">
+                    <h3>Davis Strait</h3>
+                    <p><b>Length:</b> 650 km</p>
+                    <p><b>Width:</b> 338 km</p>
+                </a>
+                <!-- Denmark Strait -->
+                <a href="straits/Denmark Strait.html"
+                class="card"
+                data-name="Denmark Strait"
+                data-connects="sea-sea"
+                data-length="480"
+                data-width="290">
+                    <img src="straits/Denmark Strait.png" alt="Denmark Strait">
+                    <h3>Denmark Strait</h3>
+                    <p><b>Length:</b> 480 km</p>
+                    <p><b>Width:</b> 290 km</p>
+                </a>
+                <!-- Dover Strait -->
+                <a href="straits/Dover Strait.html"
+                class="card"
+                data-name="Dover Strait"
+                data-connects="sea-sea"
+                data-length="34"
+                data-width="33">
+                    <img src="straits/Dover Strait.jpg" alt="Dover Strait">
+                    <h3>Dover Strait</h3>
+                    <p><b>Length:</b> 34 km</p>
+                    <p><b>Width:</b> 33 km</p>
+                </a>
+                <!-- Drake Passage -->
+                <a href="straits/Drake Passage.html"
+                class="card"
+                data-connects="ocean-ocean"
+                data-length="800"
+                data-width="800"
+                data-name="Drake Passage">
+                    <img src="straits/Drake Passage.jpg" alt="Drake Passage">
+                    <h3>Drake Passage</h3>
+                    <p><b>Length:</b> 800 km</p>
+                    <p><b>Width:</b> 800 km</p>
+                </a>
+                <!-- 2f -->
+                <!-- Florida Strait -->
+                <a href="straits/Florida Strait.html"
+                class="card"
+                data-name="Florida Strait"
+                data-connects="ocean-gulf"
+                data-length="500"
+                data-width="150">
+                    <img src="straits/Florida Strait.jpg" alt="Florida Strait">
+                    <h3>Florida Strait</h3>
+                    <p><b>Length:</b> 500 km</p>
+                    <p><b>Width:</b> 150 km</p>
+                </a>
+                <!--  Fram Strait -->
+                <a href="straits/Fram Strait.html"
+                class="card"
+                data-name="Fram Strait"
+                data-connects="ocean-sea"
+                data-length="450"
+                data-width="450">
+                    <img src="straits/Fram Strait.jpg" alt="Fram Strait">
+                    <h3>Fram Strait</h3>
+                    <p><b>Length:</b> 450 km</p>
+                    <p><b>Width:</b> 450 km</p>
+                </a>
+                <!-- 1H -->
+                <!-- Hudson Strait -->
+                <a href="straits/Hudson Strait.html"
+                class="card"
+                data-name="Hudson Strait"
+                data-connects="sea-bay"
+                data-length="750"
+                data-width="115">
+                    <img src="straits/Hudson Strait.jpg" alt="Hudson Strait">
+                    <h3>Hudson Strait</h3>
+                    <p><b>Length:</b> 750 km</p>
+                    <p><b>Width:</b> 115 km</p>
+                </a>
+                <!-- 2j -->
+                <!-- Johor Strait -->
+                <a href="straits/Johor Strait.html"
+                class="card"
+                data-name="Johor Strait"
+                data-connects="sea-strait"
+                slot="52"
+                data-width="1">
+                    <img src="straits/Johor Strait.jpg" alt="Johor Strait">
+                    <h3>Johor Strait</h3>
+                    <p><b>Length:</b> 52 km</p>
+                    <p><b>Width:</b> 1 km</p>
+                </a>
+                <!-- Juan de Fuca Entrance -->
+                <a href="straits/Juan de Fuca Strait.html"
+                class="card"
+                data-name="Juan de Fuca Entrance"
+                data-connects="ocean-strait"
+                data-length="154"
+                data-width="29">
+                    <img src="straits/Juan de Fuca Strait.jpg" alt="Juan de Fuca Strait">
+                    <h3>Juan de Fuca Strait</h3>
+                    <p><b>Length:</b> 154 km</p>
+                    <p><b>Width:</b> 29 km</p>
+                </a>
+                <!-- 3kkk -->
+                <!-- Kara Gate -->
+                <a href="straits/Kara Gate.html"
+                class="card"
+                data-name="Kara Gate"
+                data-length="33"
+                data-connects="sea-sea"
+                data-width="45">
+                    <img src="straits/Kara Gate.jpg" alt="Kara Gate">
+                    <h3>Kara Gate</h3>
+                    <p><b>Length:</b> 33 km</p>
+                    <p><b>Width:</b> 45 km</p>
+                </a>
+                <!-- Karimata Strait -->
+                <a href="straits/Karimata Strait.html"
+                class="card"
+                data-name="Karimata Strait"
+                data-connects="sea-sea"
+                data-length="150"
+                data-width="240">
+                    <img src="straits/Karimata Strait.jpg" alt="Karimata Strait">
+                    <h3>Karimata Strait</h3>
+                    <p><b>Length:</b> 150 km</p>
+                    <p><b>Width:</b> 240 km</p>
+                </a>
+                <!-- Kattegat -->
+                <a href="straits/Kattegat.html"
+                class="card"
+                data-name="Kattegat"
+                data-connects="sea-sea"
+                data-length="220"
+                data-width="60">
+                    <img src="straits/Kattegat.jpg" alt="Kattegat">
+                    <h3>Kattegat</h3>
+                    <p><b>Length:</b> 220 km</p>
+                    <p><b>Width:</b> 60 km</p>
+                </a>
+                <!-- Kerch Strait -->
+                <a href="straits/Kerch Strait.html"
+                class="card"
+                data-name="Kerch Strait"
+                data-connects="sea-sea"
+                data-length="41"
+                data-width="4.5">
+                    <img src="straits/Kerch Strait.jpg" alt="Kerch Strait">
+                    <h3>Kerch Strait</h3>
+                    <p><b>Length:</b> 41 km</p>
+                    <p><b>Width:</b> 4.5 km</p>
+                </a>
+                <!-- Korea Strait -->
+                <a href="straits/Korea Strait.html"
+                class="card"
+                data-name="Korea Strait"
+                data-connects="sea-sea"
+                data-length="324"
+                data-width="180">
+                    <img src="straits/Korea Strait.jpg" alt="Korea Strait">
+                    <h3>Korea Strait</h3>
+                    <p><b>Length:</b> 324 km</p>
+                    <p><b>Width:</b> 180 km</p>
+                </a>
+                <!-- 2L -->
+                <!-- La Pérouse Strait -->
+                <a href="straits/La Pérouse Strait.html"
+                class="card"
+                data-name="La Pérouse Strait"
+                data-connects="sea-sea"
+                data-length="94"
+                data-width="43">
+                    <img src="straits/La Pérouse Strait.jpg" alt="La Pérouse Strait">
+                    <h3>La Pérouse Strait</h3>
+                    <p><b>Length:</b> 94 km</p>
+                    <p><b>Width:</b> 43 km</p>
+                </a>
+                <!-- Le Maire Strait -->
+                <a href="straits/Le Maire Strait.html"
+                class="card"
+                data-name="Le Maire Strait"
+                data-connects="ocean-ocean"
+                data-length="32"
+                data-width="27">
+                    <img src="straits/Le Maire Strait.png" alt="Le Maire Strait">
+                    <h3>Le Maire Strait</h3>
+                    <p><b>Length:</b> 32 km</p>
+                    <p><b>Width:</b> 27 km</p>
+                </a>
+                <!-- Lombok Strait -->
+                <a href="straits/Lombok Strait.html"
+                class="card"
+                data-name="Lombok Strait"
+                data-connects="ocean-sea"
+                data-length="60"
+                data-width="18">
+                    <img src="straits/Lombok Strait.jpg" alt="Lombok Strait">
+                    <h3>Lombok Strait</h3>
+                    <p><b>Length:</b> 60 km</p>
+                    <p><b>Width:</b> 18 km</p>
+                </a>
+                <!-- Luzon Strait -->
+                <a href="straits/Luzon Strait.html"
+                class="card"
+                data-name="Luzon Strait"
+                data-connects="sea-sea"
+                data-length="250"
+                data-width="250">
+                    <img src="straits/Luzon Strait.jpg" alt="Luzon Strait">
+                    <h3>Luzon Strait</h3>
+                    <p><b>Length:</b> 250 km</p>
+                    <p><b>Width:</b> 250 km</p>
+                </a>
+                <!-- MMMMMMM -->
+                <!-- Madura Strait -->
+                <a href="straits/Madura Strait.html"
+                class="card"
+                data-name="Madura Strait"
+                data-connects="sea-sea"
+                data-length="60"
+                data-width="3">
+                    <img src="straits/Madura Strait.jpg" alt="Madura Strait">
+                    <h3>Madura Strait</h3>
+                    <p><b>Length:</b> 60 km</p>
+                    <p><b>Width:</b> 3 km</p>
+                </a>
+                <!-- Magellan Strait -->
+                <a href="straits/Magellan Strait.html"
+                class="card"
+                data-name="Magellan Strait"
+                data-connects="ocean-ocean"
+                data-length="570"
+                data-width="2">
+                    <img src="straits/Magellan Strait.jpg" alt="Magellan Strait">
+                    <h3>Magellan Strait</h3>
+                    <p><b>Length:</b> 570 km</p>
+                    <p><b>Width:</b> 2 km</p>
+                </a>
+                <!-- Makassar Strait -->
+                <a href="straits/Makassar Strait.html"
+                class="card"
+                data-name="Makassar Strait"
+                data-connects="sea-sea"
+                data-length="800"
+                data-width="130">
+                    <img src="straits/Makassar Strait.jpg" alt="Makassar Strait">
+                    <h3>Makassar Strait</h3>
+                    <p><b>Length:</b> 800 km</p>
+                    <p><b>Width:</b> 130 km</p>
+                </a>
+                <!-- Malacca Strait -->
+                <a href="straits/Malacca Strait.html"
+                class="card"
+                data-name="Malacca Strait"
+                data-connects="sea-sea"
+                data-length="930"
+                data-width="2.8">
+                    <img src="straits/Malacca Strait.jpg" alt="Malacca Strait">
+                    <h3>Malacca Strait</h3>
+                    <p><b>Length:</b> 930 km</p>
+                    <p><b>Width:</b> 2.8 km</p>
+                </a>
+                <!-- Messina Strait -->
+                <a href="straits/Messina Strait.html"
+                class="card"
+                data-name="Messina Strait"
+                data-connects="sea-sea"
+                data-length="32"
+                data-width="3.1">
+                    <img src="straits/Messina Strait.jpg" alt="Messina Strait">
+                    <h3>Messina Strait</h3>
+                    <p><b>Length:</b> 32 km</p>
+                    <p><b>Width:</b> 3.1 km</p>
+                </a>
+                <!-- Mona Passage -->
+                <a href="straits/Mona Passage.html"
+                class="card"
+                data-name="Mona Passage"
+                data-connects="ocean-sea"
+                data-length="130"
+                data-width="80">
+                    <img src="straits/Mona Passage.jpg" alt="Mona Passage">
+                    <h3>Mona Passage</h3>
+                    <p><b>Length:</b> 130 km</p>
+                    <p><b>Width:</b> 80 km</p>
+                </a>
+                <!-- Mozambique Channel -->
+                <a href="straits/Mozambique Channel.html"
+                class="card"
+                data-name="Mozambique Channel"
+                data-connects="ocean-ocean"
+                data-length="1600"
+                data-width="419">
+                    <img src="straits/Mozambique Channel.jpg" alt="Mozambique Channel">
+                    <h3>Mozambique Channel</h3>
+                    <p><b>Length:</b> 1600 km</p>
+                    <p><b>Width:</b> 419 km</p>
+                </a>
+                <!-- N -->
+                <!-- Nares Strait -->
+                <a href="straits/Nares Strait.html"
+                class="card"
+                data-name="Nares Strait"
+                data-connects="sea-bay"
+                data-length="560"
+                data-width="40">
+                    <img src="straits/Nares Strait.png" alt="Nares Strait">
+                    <h3>Nares Strait</h3>
+                    <p><b>Length:</b> 560 km</p>
+                    <p><b>Width:</b> 40 km</p>
+                </a>
+                <!-- P -->
+                <!-- Palk Strait -->
+                <a href="straits/Palk Strait.html"
+                class="card"
+                data-name="Palk Strait"
+                data-connects="bay-bay"
+                data-length="137"
+                data-width="64">
+                    <img src="straits/Palk Strait.jpg" alt="Palk Strait">
+                    <h3>Palk Strait</h3>
+                    <p><b>Length:</b> 137 km</p>
+                    <p><b>Width:</b> 64 km</p>
+                </a>
+                <!-- S -->
+                <!-- Singapore Strait -->
+                <a href="straits/Singapore Strait.html"
+                class="card"
+                data-name="Singapore Strait"
+                data-connects="sea-strait"
+                data-length="114"
+                data-width="16">
+                    <img src="straits/Singapore Strait.jpg" alt="Singapore Strait">
+                    <h3>Singapore Strait</h3>
+                    <p><b>Length:</b> 114 km</p>
+                    <p><b>Width:</b> 16 km</p>
+                </a>
+                <!-- Skagerrak -->
+                <a href="straits/Skagerrak.html"
+                class="card"
+                data-name="Skagerrak"
+                data-connects="sea-sea"
+                data-length="240"
+                data-width="80">
+                    <img src="straits/Skagerrak.jpg" alt="Skagerrak">
+                    <h3>Skagerrak</h3>
+                    <p><b>Length:</b> 240 km</p>
+                    <p><b>Width:</b> 80 km</p>
+                </a>
+                <!-- Strait of Gibraltar -->
+                <a href="straits/Strait of Gibraltar.html"
+                class="card"
+                data-name="Strait of Gibraltar"
+                data-connects="ocean-sea"
+                data-length="58"
+                data-width="14">
+                    <img src="straits/Strait of Gibraltar.jpg" alt="Strait of Gibraltar">
+                    <h3>Strait of Gibraltar</h3>
+                    <p><b>Length:</b> 58 km</p>
+                    <p><b>Width:</b> 14 km</p>
+                </a>
+                <!-- Strait of Hormuz -->
+                <a href="straits/Strait of Hormuz.html"
+                class="card"
+                data-name="Strait of Hormuz"
+                data-connects="gulf-gulf"
+                data-length="167"
+                data-width="39">
+                    <img src="straits/Strait of Hormuz.jpg" alt="Strait of Hormuz">
+                    <h3>Strait of Hormuz</h3>
+                    <p><b>Length:</b> 167 km</p>
+                    <p><b>Width:</b> 39 km</p>
+                </a>
+                <!-- Sunda Strait -->
+                <a href="straits/Sunda Strait.html"
+                class="card"
+                data-name="Sunda Strait"
+                data-connects="ocean-sea"
+                data-length="100"
+                data-width="24">
+                    <img src="straits/Sunda Strait.jpg" alt="Sunda Strait">
+                    <h3>Sunda Strait</h3>
+                    <p><b>Length:</b> 100 km</p>
+                    <p><b>Width:</b> 24 km</p>
+                </a>
+                <!-- 4T -->
+                <!-- Taiwan Strait -->
+                <a href="straits/Taiwan Strait.html"
+                class="card"
+                data-name="Taiwan Strait"
+                data-connects="sea-sea"
+                data-length="180"
+                data-width="130">
+                    <img src="straits/Taiwan Strait.jpg" alt="Taiwan Strait">
+                    <h3>Taiwan Strait</h3>
+                    <p><b>Length:</b> 180 km</p>
+                    <p><b>Width:</b> 130 km</p>
+                </a>
+                <!-- Tatar Strait -->
+                <a href="straits/Tatar Strait.html"
+                class="card"
+                data-name="Tatar Strait"
+                data-connects="sea-sea"
+                data-length="663"
+                data-width="7">
+                    <img src="straits/Tatar Strait.jpg" alt="Tatar Strait">
+                    <h3>Tatar Strait</h3>
+                    <p><b>Length:</b> 663 km</p>
+                    <p><b>Width:</b> 7 km</p>
+                </a>
+                <!-- Torres Strait -->
+                <a href="straits/Torres Strait.html"
+                class="card"
+                data-name="Torres Strait"
+                data-connects="sea-sea"
+                data-length="150"
+                data-width="150">
+                    <img src="straits/Torres Strait.jpg" alt="Torres Strait">
+                    <h3>Torres Strait</h3>
+                    <p><b>Length:</b> 150 km</p>
+                    <p><b>Width:</b> 150 km</p>
+                </a>
+                <!-- Tsugaru Strait -->
+                <a href="straits/Tsugaru Strait.html"
+                class="card"
+                data-name="Tsugaru Strait"
+                data-connects="ocean-sea"
+                data-length="130"
+                data-width="20">
+                    <img src="straits/Tsugaru Strait.jpg" alt="Tsugaru Strait">
+                    <h3>Tsugaru Strait</h3>
+                    <p><b>Length:</b> 130 km</p>
+                    <p><b>Width:</b> 20 km</p>
+                </a>
+                <!-- Tsushima Strait -->
+                <a href="straits/Tsushima Strait.html"
+                class="card"
+                data-name="Tsushima Strait"
+                data-connects="sea-sea"
+                data-length="225"
+                data-width="50">
+                    <img src="straits/Tsushima Strait.png" alt="Tsushima Strait">
+                    <h3>Tsushima Strait</h3>
+                    <p><b>Length:</b> 225 km</p>
+                    <p><b>Width:</b> 50 km</p>
+                </a>
+                <!-- V -->
+                <!-- Vilkitsky Strait -->
+                <a href="straits/Vilkitsky Strait.html"
+                class="card"
+                data-name="Vilkitsky Strait"
+                data-connects="sea-sea"
+                data-length="130"
+                data-width="56">
+                    <img src="straits/Vilkitsky Strait.jpg" alt="Vilkitsky Strait">
+                    <h3>Vilkitsky Strait</h3>
+                    <p><b>Length:</b> 130 km</p>
+                    <p><b>Width:</b> 56 km</p>
+                </a>
+                <!-- Windward Passage -->
+                <a href="straits/Windward Passage.html"
+                class="card"
+                data-name="Windward Passage"
+                data-connects="ocean-sea"
+                data-length="80"
+                data-width="80">
+                    <img src="straits/Windward Passage.png" alt="Windward Passage">
+                    <h3>Windward Passage</h3>
+                    <p><b>Length:</b> 80 km</p>
+                    <p><b>Width:</b> 80 km</p>
+                </a>
+                <!-- Y -->
+                <!-- Yucatán Channel -->
+                <a href="straits/Yucatán Channel.html"
+                class="card"
+                data-name="Yucatán Channel"
+                data-connects="sea-gulf"
+                data-length="217"
+                data-width="197">
+                    <img src="straits/Yucatán Channel.jpg" alt="Yucatán Channel">
+                    <h3>Yucatán Channel</h3>
+                    <p><b>Length:</b> 217 km</p>
+                    <p><b>Width:</b> 197 km</p>
+                </a>
             </div>
         </section>
     </main>
